@@ -46,7 +46,7 @@ services:
   #      service: microservice-db-config
 
   configserver:
-    image: "raknair/configserver:s11"
+    image: "raknair/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -64,7 +64,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "raknair/eurekaserver:s11"
+    image: "raknair/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -84,7 +84,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "raknair/accounts:s11"
+    image: "raknair/accounts:s12"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -105,7 +105,7 @@ services:
   #        condition: service_healthy
 
   loans:
-    image: "raknair/loans:s11"
+    image: "raknair/loans:s12"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -126,7 +126,7 @@ services:
   #        condition: service_healthy
 
   cards:
-    image: "raknair/cards:s11"
+    image: "raknair/cards:s12"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -147,7 +147,7 @@ services:
   #        condition: service_healthy
 
   gatewayserver:
-    image: "raknair/gatewayserver:s11"
+    image: "raknair/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"

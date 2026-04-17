@@ -216,7 +216,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "raknair/configserver:s11"
+    image: "raknair/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -233,7 +233,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "raknair/eurekaserver:s11"
+    image: "raknair/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -254,7 +254,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   accounts:
-    image: "raknair/accounts:s11"
+    image: "raknair/accounts:s12"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -277,7 +277,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "raknair/loans:s11"
+    image: "raknair/loans:s12"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -300,7 +300,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "raknair/cards:s11"
+    image: "raknair/cards:s12"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -323,7 +323,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "raknair/gatewayserver:s11"
+    image: "raknair/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
